@@ -1,19 +1,30 @@
 html
   font-size: 20px
 body
-  font-family: 'Hammersmith One', sans-serif
+  font-family: 'Hammersmith One', sans-serifz
+  margin: 0
+  width: 100%
+.App
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 100%
+  min-height: 100vh
 .login 
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
-  margin: auto
+  margin: 0 auto
+  width: calc( 100% - 32px )
+  max-width: 601px
 .text
   display: flex
   flex-direction: column
   align-items: center
   justify-content: center
-  width: 30.05rem
+  // width: 30.05rem
   &__title
     margin: 0
     margin-top: 1.35rem
@@ -37,7 +48,9 @@ body
   justify-content: flex-start
   align-items: center
   flex-direction: column
-  width: 29.8rem
+  width: calc( 100% - 40px )
+  padding: 20px 
+  // width: 29.8rem
   height: 20.25rem
   border: 3px solid #464655
   border-radius: 30px
@@ -58,17 +71,19 @@ body
     &:hover
       cursor: pointer
 .field
-  width: 24.2rem
+  width: calc( 100% - 20px )
+  padding: 0 0 0 20px
   height: 2.45rem
   border: 1px solid #464655
   border-radius: 3px
   font-size: 0.9rem
 .title-field
   color: #68A691
-  width: 24.2rem
+  width: fit-content
   text-transform: uppercase
   margin: 0
-  text-align: left
+  align-self: flex-start
+  text-align: center
   font-size: 1rem
   font-weight: 400
   letter-spacing: 0.01em
@@ -85,24 +100,12 @@ body
 @media screen and ( max-width: 570px )
   html
     font-size: 14px
-  body
-    margin: 0
-    margin-left: 16px
-    margin-right: 16px
 @media screen and ( max-width: 440px )
   html
-    font-size: 12px
-  body
-    margin: 0
-    margin-left: 16px
-    margin-right: 16px
+    font-size: 12qpx
 @media screen and ( max-width: 370px )
   html
     font-size: 10px
-  body
-    margin: 0
-    margin-left: 16px
-    margin-right: 16px
 
   
   
