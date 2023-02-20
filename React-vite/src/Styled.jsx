@@ -52,6 +52,7 @@ const Field = styled.input `
 `;
 
 const TitleFieldOne = styled.p `
+  display: flex;
   color: #68A691;
   width: fit-content;
   text-transform: uppercase;
@@ -62,10 +63,12 @@ const TitleFieldOne = styled.p `
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 25px;
-  margin-top: 3.15rem
+  /* margin-top: 3.15rem; */
+  
 `;
 
 const TitleFieldSecond = styled.p `
+  display: flex;
   color: #68A691;
   width: fit-content;
   text-transform: uppercase;
@@ -76,7 +79,57 @@ const TitleFieldSecond = styled.p `
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 25px;
-  margin-top: 1.35rem
+  /* margin-top: 1.35rem; */
+  
 `;
 
-export {Title, SubTitle, MainBotton, Field, TitleFieldOne, TitleFieldSecond};
+const Wrap = styled.div `
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+`;
+
+const Login = styled.div `
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: calc( 100% - 32px );
+  max-width: 601px;
+`;
+
+const Text = styled.div `
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Board = styled.form`
+  display: flex;
+  /* justify-content: flex-start; */
+  /* justify-content: space-around; */
+  align-items: center;
+  flex-direction: column;
+  width: calc( 100% - 40px );
+  padding: 20px;
+  padding-top: 63px;
+  height: 20.25rem;
+  border: 3px solid #464655;
+  border-radius: 30px;
+  gap: 30px;
+`;
+
+const WrapBoard = styled.div `
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: calc( 100% - 40px );
+`;
+
+export {Title, SubTitle, MainBotton, Field, TitleFieldOne, TitleFieldSecond, Wrap, Login, Text, Board, WrapBoard};

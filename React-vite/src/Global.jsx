@@ -14,15 +14,15 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     width: 100%;
   }
-  .App{
+  /* .App{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     min-height: 100vh;
-  }
-  .login{ 
+  } */
+  /* .login{ 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,14 +30,14 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0 auto;
     width: calc( 100% - 32px );
     max-width: 601px;
-  }
-  .text{
+  } */
+  /* .text{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  .board{
+  } */
+  /* .board{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -47,8 +47,7 @@ export const GlobalStyles = createGlobalStyle`
     height: 20.25rem;
     border: 3px solid #464655;
     border-radius: 30px;
-    
-  }
+  } */
   
   
 `;
