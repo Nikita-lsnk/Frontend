@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 const Title = styled.h1 `
   margin: 0;
-  margin-top: 1.35rem;
-  margin-bottom: 1.5rem;
   text-transform: uppercase;
   color: #464655;
   font-weight: 400;
@@ -18,7 +16,6 @@ const SubTitle = styled.span `
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 40px;
-  margin-bottom: 3.35rem;
   letter-spacing: 0.01em;
 `;
 
@@ -51,7 +48,7 @@ const Field = styled.input `
   font-size: 0.9rem;
 `;
 
-const TitleFieldOne = styled.p `
+const TitleField = styled.p `
   display: flex;
   color: #68A691;
   width: fit-content;
@@ -63,23 +60,6 @@ const TitleFieldOne = styled.p `
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 25px;
-  /* margin-top: 3.15rem; */
-  
-`;
-
-const TitleFieldSecond = styled.p `
-  display: flex;
-  color: #68A691;
-  width: fit-content;
-  text-transform: uppercase;
-  margin: 0;
-  align-self: flex-start;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  line-height: 25px;
-  /* margin-top: 1.35rem; */
   
 `;
 
@@ -107,18 +87,17 @@ const Text = styled.div `
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 30px;
 `;
 
 const Board = styled.form`
   display: flex;
-  /* justify-content: flex-start; */
-  /* justify-content: space-around; */
   align-items: center;
   flex-direction: column;
+  margin-top: 20px;
   width: calc( 100% - 40px );
   padding: 20px;
   padding-top: 63px;
-  height: 20.25rem;
   border: 3px solid #464655;
   border-radius: 30px;
   gap: 30px;
@@ -132,4 +111,4 @@ const WrapBoard = styled.div `
   width: calc( 100% - 40px );
 `;
 
-export {Title, SubTitle, MainBotton, Field, TitleFieldOne, TitleFieldSecond, Wrap, Login, Text, Board, WrapBoard};
+export {Title, SubTitle, MainBotton, Field, TitleField, Wrap, Login, Text, Board, WrapBoard};
