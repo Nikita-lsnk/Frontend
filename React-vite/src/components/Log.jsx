@@ -1,22 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.sass'
-import {GlobalStyles} from './Global.jsx'
-import {Title, SubTitle, MainBotton, Field, TitleField, Wrap, Login, Text, Board, WrapBoard} from './Styled.jsx'
-import Navbar from './components/navbar/Navbar'
-import Foot from './components/foot/Foot'
-import Log from './components/Log'
+import React from 'react'
+import {Title, SubTitle, MainBotton, Field, TitleField, Wrapin, Login, Text, Board, WrapBoard} from '../Styled.jsx'
+import {GlobalStyles} from '../Global.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const Log = () => {
   return (
-    <Wrap>
+    <Wrapin>
       <GlobalStyles/>
-
-      <Navbar/>
-
-      {/* <Login>
+      <Login>
         <Text>
         <Title>Welcome.</Title>
           <SubTitle>Hello, nice to se you again!</SubTitle>
@@ -32,14 +22,9 @@ function App() {
           </WrapBoard>
           <MainBotton>Login</MainBotton>
         </Board>
-      </Login> */}
-
-      <Log/>
-      
-      <Foot/>
-
-    </Wrap>
+      </Login>
+    </Wrapin>
   )
 }
 
-export default App
+export default Log

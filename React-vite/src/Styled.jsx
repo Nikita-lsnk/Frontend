@@ -73,6 +73,16 @@ const Wrap = styled.div `
   margin: 0, auto;
 `;
 
+const Wrapin = styled.div `
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* min-height: 100vh; */
+  margin: 0, auto;
+  `;
+
 const Login = styled.div `
   display: flex;
   flex-direction: column;
@@ -112,4 +122,4 @@ const WrapBoard = styled.div `
   width: calc( 100% - 40px );
 `;
 
-export {Title, SubTitle, MainBotton, Field, TitleField, Wrap, Login, Text, Board, WrapBoard};
+export {Title, SubTitle, MainBotton, Field, TitleField, Wrap, Login, Text, Board, WrapBoard, Wrapin};
