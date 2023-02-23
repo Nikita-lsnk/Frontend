@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import './App.sass'
 import {GlobalStyles} from './Global.jsx'
 import {Title, SubTitle, MainBotton, Field, TitleField, Wrap, Login, Text, Board, WrapBoard} from './Styled.jsx'
+import Navbar from './components/navbar/Navbar'
+import Foot from './components/foot/Foot'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,6 +12,9 @@ function App() {
   return (
     <Wrap>
       <GlobalStyles/>
+
+      <Navbar/>
+
       <Login>
         <Text>
         <Title>Welcome.</Title>
@@ -27,6 +32,9 @@ function App() {
           <MainBotton>Login</MainBotton>
         </Board>
       </Login>
+      
+      <Foot/>
+
     </Wrap>
   )
 }

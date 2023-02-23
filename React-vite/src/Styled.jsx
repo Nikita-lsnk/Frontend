@@ -67,9 +67,10 @@ const Wrap = styled.div `
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   min-height: 100vh;
+  margin: 0, auto;
 `;
 
 const Login = styled.div `
