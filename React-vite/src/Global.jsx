@@ -14,6 +14,13 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     width: 100%;
   }
+  body a{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+  }
+  ul,li{
+    list-style:none;
+  }
   /* .App{
     display: flex;
     flex-direction: column;

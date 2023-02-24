@@ -6,6 +6,8 @@ import {Title, SubTitle, MainBotton, Field, TitleField, Wrap, Login, Text, Board
 import Navbar from './components/navbar/Navbar'
 import Foot from './components/foot/Foot'
 import Log from './components/Log'
+import { Routes, Route } from 'react-router-dom'
+import About from './components/About'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,25 +18,12 @@ function App() {
 
       <Navbar/>
 
-      {/* <Login>
-        <Text>
-        <Title>Welcome.</Title>
-          <SubTitle>Hello, nice to se you again!</SubTitle>
-        </Text>
-        <Board action="#" method='get'>
-          <WrapBoard>
-            <TitleField>email/username</TitleField>
-            <Field type="text" name='username' placeholder='@username'></Field>
-          </WrapBoard>
-          <WrapBoard>
-            <TitleField>password</TitleField>
-            <Field type="password" name='userpass' placeholder='password'></Field>
-          </WrapBoard>
-          <MainBotton>Login</MainBotton>
-        </Board>
-      </Login> */}
+      <Routes>
+        <Route path='/' element={<Log/>}/>
+        <Route path='/about' element={<About/>}/>
+      </Routes>
 
-      <Log/>
+      {/* <Log/> */}
       
       <Foot/>
 
