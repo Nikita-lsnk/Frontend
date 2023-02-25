@@ -14,24 +14,24 @@ const Navbar = () => {
 
     <Header>
       <Container>
-        <Box>
+        
 
           <LogoImage>
             <img src={logo} alt="/" />
           </LogoImage>
           
           <Menu className={nav? "active":"" }>
-            <li>
+            {/* <li> */}
               <Link to="/">Home</Link>
-            </li>
-            <li>
+            {/* </li> */}
+            {/* <li> */}
               <Link to="/about">About</Link>
-            </li>
+            {/* </li> */}
           </Menu>
           <MobileBtn onClick={() => setNav(!nav)}>
           {nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size={25}/>}
           </MobileBtn>
-        </Box>
+        
       </Container>
     </Header>
   
@@ -45,16 +45,14 @@ const Header = styled.header `
 `;
 const Container = styled.div`
   height: 80px;
-`;
-const Box = styled.div`
-  height: 80px;
   display: flex;
   justify-content: space-between;
 `;
+
 const LogoImage = styled.div`
   display: flex;
   align-items: center;
-  padding-left: 18px;
+  margin-left: 18px;
 `;
 const Menu = styled.div`
   padding-right: 50px;

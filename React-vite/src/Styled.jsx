@@ -69,7 +69,7 @@ const Wrap = styled.div `
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0, auto;
 `;
 
@@ -79,7 +79,6 @@ const Wrapin = styled.div `
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* min-height: 100vh; */
   margin: 0, auto;
   `;
 
